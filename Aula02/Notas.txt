@@ -1,0 +1,59 @@
+16/08/24
+
+JS - variáveis
+---------------------
+
+1) O que é a internet para você?
+  - o QUE É O Browser?
+
+2) Cliente-Servidor 
+   - arquitetura da internet
+      - Fluxo de requisição e resposta
+
+3) Node
+    - Node é o interpretador do JS.
+    - Baseado no interpretador V* do Google
+    - Características: Arquitetura assincrona e orientada a eventos
+        - Processa as requisições que chegam de forma assincrona. Sistema de threads
+
+4) Declarando variáveis:
+
+- Para rodar um node.js basta digitar: node (nome do arquivo.js).
+
+   - Const: Escopo de bloco e não pode fazer atribuição;
+   - var:   Escopo de função e global. Não tem escopo de bloco;
+   - let:   Escopo de bloco.
+
+Obs.: Parece que se voce declarar uma variável com var e inicializa,
+redeclara e não atribui valor, ele vai imprimir o valor atribuido e não undefined.
+
+Talvez isso mostre que ele mantem o apontamento para o mesmo endereço em caso de 
+redeclaração
+
+5) Tipos primitivos
+  - String
+  - Boolean: true e false tudo minusculo. Essas são as palavras reservadas
+  - Number
+  - undefined: Não há atribuição;
+  - Null: Há um aatribuição, porém que deu errado
+
+6) Operadores:
+  +
+  -
+  *
+  /
+  %
+
+--------------------------------------------------------------------------
+Palavras chaves:
+  - FTP
+  - Bolha.com (chama-se de bolha porque nem todo capital investido é retornado)
+  - Multiparadigma (A linguagem atende diferentes paradigmas de programação como POO, estruturada e etc)
+  - Node é o interpretador do JS.
+
+  Dúvidas:
+  1 - Por que JS é interpretado? Isso, de alguma forma, está associado ao fato de ele ser uma linguagem que retornado 
+  no browser?
+
+  2 - Ao redeclarar um avariável js utilizadno var, ele sobrescreve aquele endereço
+  com o mesmo valor ou ele atribui à um endereço diferente o mesmo identificador?
