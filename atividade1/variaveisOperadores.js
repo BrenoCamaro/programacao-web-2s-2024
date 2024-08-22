@@ -1,5 +1,5 @@
 // Atividade 01
-// Autor: Breni Camarô Arraes
+// Autor: Breno Camarô Arraes
 // Faça a declaração de 2 variáveis numéricas para cada operador e guarde o resultado da operação em uma terceira variável
 // Para cada resultado obtido, imprima o texto “Resultado da {operação} entre {num_A} e {num_B} é {resultado}”
 
@@ -10,7 +10,7 @@ let operacao1 = "soma";
 let result1 = num1 + num2;
 
 //Subtração
-let num3 = 4;
+let num3 = 3;
 let num4 = 4;
 let operacao2 = "subtração";
 let result2 = num1 - num2;
