@@ -1,0 +1,9 @@
+Aula 03: Arrays e funções em JS
+----------
+Operador typeof retorna o tipo de dados de uma variavel;
+
+Estrutura para guardar informações baseada em chaves e valor se chama dicionário
+
+Um array nada mais é que um objeto onde o indice é o nome da propriedade
+
+Existem várias formas de se declarar funções em JS
