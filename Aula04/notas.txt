@@ -1,0 +1,18 @@
+1) Módulos:
+// No arquivo que contêm as funções que serão exportadas
+
+module.exports = {
+    somar
+}
+
+//NO arquivo que recebrá a função
+const require ('./calculadora);
+
+calc.nomeDafunção // Na hora que for utilizá-la
+
+
+Palavras-chave:
+---------------------
+- Problema: p versus np
+- Cacheiro viajante
+- Dry: Don't reapeat your self

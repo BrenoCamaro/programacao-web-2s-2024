@@ -12,7 +12,7 @@ let matrizTransposta = Array.from({ length: linhas }, () => Array(colunas).fill(
 
 function transporMatriz(matriz) {
     for(let i = 0; i < matriz.length; i++) {
-        for(let j = 0; j < matriz[i].length; j++) {
+        for(let j = 0; j < matriz[0].length; j++) {
             matrizTransposta[j][i] = matriz[i][j];
         }
 
