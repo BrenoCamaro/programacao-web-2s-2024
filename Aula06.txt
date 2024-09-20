@@ -1,0 +1,15 @@
+Palavras-Chave:
+-----------------------
+npm:
+    É um gerenciador de pacotes do Js. Um gerenciador de pacotes
+    é um repositório para meus módulos. Assim, posso compartilha-los com
+    outras pessoas
+ 
+ Módulo:
+    É um componente de uma biblioteca. 
+    Uma biblioteca é uma coleção de pacotes e cada pacote possui vários 
+    módulos
+
+Porta:
+
+Porta 8080:
