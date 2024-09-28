@@ -1,7 +1,7 @@
 const express = require('express') //Importanto o pacote externo express
 const estoque = require ('./util/estoque.js')
 
-const app = express(); //Utilizando o construtor do express para criar nossa aplicação
+const app = express(); //Utilizando o construtor do express para criar a aplicação
 const PORT = 8080;
 
 produtos = []; //Array de produtos
@@ -10,7 +10,7 @@ app.get('/', (req, res)=> {
     res.send("App funcionando!");
 });
 
-//: indica que o próximo caractere trata-se de uma variável
+
 app.get('/adicionar/:nome/:preco', (req, res)=> {
     let nome = req.params.nome;
     let preco = parseFloat(req.params.preco);
@@ -24,7 +24,21 @@ app.get('/listar', (req, res)=> {
     res.send(lista);
 });
 
-//Função arrow. Função callback
+app.get('/remover/:id', (req, res)=> {
+    let id = req.params.id;
+    const lista = estoque.remover(id, produtos)
+    res.send('Produto removido com sucesso!');
+});
+
+app.get('/editar/:id/:nome/:preco', (req, res)=> {
+    let id = req.params.id;
+    let nome = req.params.nome;
+    let preco = req.params.preco
+    const lista = estoque.editar(id, produtos, nome, preco)
+    res.send('Produto alterado com sucesso!');
+});
+
+
 app.listen(PORT, ()=>{ 
     console.log("App executando na porta " + PORT);
 });
