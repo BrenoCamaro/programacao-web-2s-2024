@@ -8,7 +8,8 @@ app.set('views', __dirname + '/views');
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.render("index.html");
+    let erro = req.query.erro;
+    res.render("index.html", {erro});
 });
 
 app.post('/dados', (req, res) => {
@@ -17,7 +18,7 @@ app.post('/dados', (req, res) => {
         data_nascimento: req.body.data_nascimento,
         descricao: req.body.descricao
     };
-    
+
     //Validação dos dados
     let erro = false;
     if(dados.nome.length == 0) {

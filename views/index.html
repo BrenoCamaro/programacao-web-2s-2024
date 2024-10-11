@@ -11,6 +11,15 @@
     
     <div class = 'container'>
         <div class='row mt-3'>
+
+            {{#erro}}
+            <div class="col-6 offset-3">
+                <div class="alert alert-danger">
+                    <strong>Dados incorretos</strong>
+                    Nenhum campo pode estar vazio.
+                </div>
+            </div>
+            {{/erro}}
             <form action="/dados" method="post">
                 <div class="col-6 offset-3">
                     <label for="name" class="form-label">Nome:</label>
