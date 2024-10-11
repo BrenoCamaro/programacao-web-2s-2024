@@ -17,10 +17,27 @@ app.post('/dados', (req, res) => {
         data_nascimento: req.body.data_nascimento,
         descricao: req.body.descricao
     };
+    
+    //Validação dos dados
+    let erro = false;
+    if(dados.nome.length == 0) {
+        erro = true;
+    }
 
-    if(dados.nome.length == 0)
+    if(dados.data_nascimento.length == 0) {
+        erro = true;
+    }
 
-    res.render('dados.html', {dados});
+    if(dados.descricao.length == 0) {
+        erro = true;
+    }
+
+    if(erro) {
+        res.redirect('/?erro = true');
+    } else {
+        res.render('dados.html', {dados});
+    }
+
 });
 
 const PORT = 8080;
